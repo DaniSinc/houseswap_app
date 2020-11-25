@@ -1,6 +1,6 @@
 // import 'mapbox-gl/dist/mapbox-gl.css',
 // import mapboxgl from 'mapbox-gl/dist/mapbox-gl.js';
-import mapboxgl from 'mapbox-gl';
+import mapboxgl, { Popup } from 'mapbox-gl';
 
 const initMapbox = () => {
     const mapElement = document.getElementById('map');
@@ -18,13 +18,21 @@ const initMapbox = () => {
         });
 
         const markers = JSON.parse(mapElement.dataset.markers);
-        markers.forEach((marker) => {
-            new mapboxgl.Marker()
-                .setLngLat([marker.lng, marker.lat])
-                .addTo(map);
-        });
+        // const addMarkersToMap = (map, markers) => {
+            markers.forEach((marker) => {
+                const popup = new mapboxgl.Popup().setHTML(marker.infoWindow);
+    
+                new mapboxgl.Marker()
+                    .setLngLat([marker.lng, marker.lat])
+                    .setPopup(popup)
+                    // .setHTML(marker.infoWindow.content))
+                    .addTo(map);
+            });
+
+        // }
 
         fitMapToMarkers(map, markers);
+        addMarkersToMap(map, markers);
     }
 };
 
