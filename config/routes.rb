@@ -11,5 +11,5 @@ Rails.application.routes.draw do
   get "/shed", to: "pages#shed"
   get "/living_room", to: "pages#living_room"
   get "/controls", to: "pages#controls"
-  get "/pubs", to: "pubs#index"
+  get "/places", to: "places#index"
 end
