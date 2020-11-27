@@ -1,1 +1,65 @@
 // Specific CSS for your home-page
+body {
+    background-color: #FFFFFF;
+}
+
+.spider-diagram {
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 154px;
+}
+
+.spider-icon {
+    height: 70px;
+}
+
+#home-icon {
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#clock-icon {
+    position: absolute;
+    top: -49%;
+    left: 41%;
+    height: 54px;
+}
+#plug-icon {
+    position: absolute;
+    top: -20%;
+    left: 69%;
+}
+
+#washer-icon {
+    position: absolute;
+    top: 106%;
+    left: 77%;
+}
+
+#plant-icon {
+    position: absolute;
+    top: 38%;
+    left: 0;
+}
+
+#door-icon {
+    position: absolute;
+    top: 107%;
+    left: 10%;
+}
+
+#blender-icon {
+    position: absolute;
+    top: 38%;
+    left: 87%;
+}
+
+#bathtub-icon {
+    position: absolute;
+    top: -31%;
+    left: 7%;
+}

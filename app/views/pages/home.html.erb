@@ -1,11 +1,55 @@
-<ul>
-    <li><%= link_to 'Parking', parking_path %></li>
-    <li><%= link_to 'Alarms', alarms_path %></li>
-    <li><%= link_to 'Kitchen', kitchen_path %></li>
-    <li><%= link_to 'Doors', doors_path %></li>
-    <li><%= link_to 'Bathrooms', bathrooms_path %></li>
-    <li><%= link_to 'Rubbish and Recycling', rubbish_path %></li>
-    <li><%= link_to 'Front shed', shed_path %></li>
-    <li><%= link_to 'Living Room', living_room_path %></li>
-    <li><%= link_to 'Heat and Water controls', controls_path %></li>
-</ul>
+<%# <ul> %>
+    <%# <li><%= link_to 'Parking', parking_path %></li>
+    <%# <li><%= link_to 'Alarms', alarms_path %></li>
+    <%# <li><%= link_to 'Kitchen', kitchen_path %></li>
+    <%# <li><%= link_to 'Doors', doors_path %></li>
+    <%# <li><%= link_to 'Bathrooms', bathrooms_path %></li>
+    <%# <li><%= link_to 'Rubbish and Recycling', rubbish_path %></li>
+    <%# <li><%= link_to 'Front shed', shed_path %></li>
+    <%# <li><%= link_to 'Living Room', living_room_path %></li>
+    <%# <li><%= link_to 'Heat and Water controls', controls_path %></li>
+<%# </ul> %>
+
+<div class="container">
+    <div class="spider-diagram">
+        <%= cl_image_tag("https://res.cloudinary.com/dsjaabri5/image/upload/v1606478432/houseswap_app/house_zool00.jpg", 
+        id: "home-icon") %>
+        <div class="spider-icons">
+            <%= link_to parking_path do %>
+                <%= cl_image_tag("https://res.cloudinary.com/dsjaabri5/image/upload/v1606478433/houseswap_app/washing_gyrsde.jpg", 
+                class: "spider-icon",
+                id: "washer-icon") %>
+            <% end %>
+            <%= link_to parking_path do %>
+                <%= cl_image_tag("https://res.cloudinary.com/dsjaabri5/image/upload/v1606478432/houseswap_app/plug_rqgsrv.jpg", 
+                class: "spider-icon",
+                id: "plug-icon") %>
+            <% end %>
+            <%= link_to shed_path do %>
+                <%= cl_image_tag("https://res.cloudinary.com/dsjaabri5/image/upload/v1606478432/houseswap_app/plant_gtrzgr.jpg", 
+                class: "spider-icon",
+                id: "plant-icon") %>
+            <% end %>
+            <%= link_to doors_path do %>
+                <%= cl_image_tag("https://res.cloudinary.com/dsjaabri5/image/upload/v1606478432/houseswap_app/door_dgnrqz.jpg", 
+                class: "spider-icon",
+                id: "door-icon") %>
+            <% end %>
+            <%= link_to kitchen_path do %>
+                <%= cl_image_tag("https://res.cloudinary.com/dsjaabri5/image/upload/v1606478432/houseswap_app/kitchen_cgsjr9.jpg", 
+                class: "spider-icon",
+                id: "blender-icon") %>
+            <% end %>
+            <%= link_to bathrooms_path do %>
+                <%= cl_image_tag("https://res.cloudinary.com/dsjaabri5/image/upload/v1606478432/houseswap_app/bathtub_qy9deg.jpg", 
+                class: "spider-icon",
+                id: "bathtub-icon") %>
+            <% end %>
+            <%= link_to alarms_path do %>
+                <%= cl_image_tag("https://res.cloudinary.com/dsjaabri5/image/upload/v1606478432/houseswap_app/clock_sxddca.jpg", 
+                class: "spider-icon",
+                id: "clock-icon") %>
+            <% end %>
+        </div>
+    </div>
+</div>
