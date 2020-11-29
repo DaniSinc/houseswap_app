@@ -12,4 +12,5 @@ Rails.application.routes.draw do
   get "/living_room", to: "pages#living_room"
   get "/controls", to: "pages#controls"
   get "/places", to: "places#index"
+  resources :places
 end
